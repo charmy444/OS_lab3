@@ -1,0 +1,14 @@
+25    clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0xffffb6fff270, parent_tid=0xffffb6fff270, exit_signal=0, stack=0xffffb67f0000, stack_size=0x80ea60, tls=0xffffb6fff8e0}, 88) = -1 ENOSYS (Function not implemented)
+25    clone(child_stack=0xffffb6ffea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[26], tls=0xffffb6fff8e0, child_tidptr=0xffffb6fff270) = 26
+25    clone(child_stack=0xffffb67eea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[27], tls=0xffffb67ef8e0, child_tidptr=0xffffb67ef270) = 27
+26    +++ exited with 0 +++
+25    clone(child_stack=0xffffb5fdea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[28], tls=0xffffb5fdf8e0, child_tidptr=0xffffb5fdf270) = 28
+25    futex(0xffffb67ef270, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 27, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+27    +++ exited with 0 +++
+25    <... futex resumed>)              = 0
+25    futex(0xffffb5fdf270, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 28, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+28    +++ exited with 0 +++
+25    clone(child_stack=0xffffb5fdea60, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[29], tls=0xffffb5fdf8e0, child_tidptr=0xffffb5fdf270) = 29
+25    futex(0xffffb5fdf270, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 29, NULL, FUTEX_BITSET_MATCH_ANY) = 0
+29    +++ exited with 0 +++
+25    +++ exited with 0 +++
